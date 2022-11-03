@@ -45,12 +45,12 @@ def main():
 @click.argument('output', type=str)
 @click.option('--encoding', default='utf-8', help='Encoding of the files to be read')
 def extract(root, output, encoding):
-    lib_dir = os.path.join(root, "Libraries")
     if not os.path.exists(output):
         os.mkdir(output)
     elif len(os.listdir(output)) > 0:
         click.echo('Warning: output dir is not empty.')
 
+    lib_dir = os.path.join(root)
     files = list_files(lib_dir)
     jobs = []
     for file in files:

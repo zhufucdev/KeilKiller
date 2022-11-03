@@ -21,7 +21,7 @@ python main.py extract <Keil Project Root> <Output Dir> --encoding=<You determin
 ```
 
 The program will iterate through all files under 
-`<Keil Project Root>/Libraries`
+`<Keil Project Root>`
 
 ## License
 ```
