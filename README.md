@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 Start converting
 ```shell
-python main.py extract <Keil Project Root> <Output Dir> --encoding=<You determinate>
+python main.py extract <Keil Project Root> <Output Dir> --encoding=<You determine>
 ```
 
 The program will iterate through all files under 
